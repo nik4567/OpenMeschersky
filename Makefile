@@ -1,5 +1,6 @@
+JS=nodejs
 all:
-	js make-task-list.js
+	$(JS) make-task-list.js
 	pdflatex OpenMeschersky.tex
 	pdflatex OpenMeschersky.tex
 	nohup evince OpenMeschersky.pdf &
