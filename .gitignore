@@ -233,6 +233,11 @@ TSWLatexianTemp*
 *.orig
 *.LOCAL
 
+*_BASE_*
+*_BACKUP_*
+*_LOCAL_*
+*_REMOTE_*
+
 # LibreOffice locks
 .~lock.*
 
