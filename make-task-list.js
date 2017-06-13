@@ -3,6 +3,11 @@ var tasks   = peelNames(ls('tasks/*.task.tex'  ),'\\.task\\.tex'  );
 var answers = peelNames(ls('tasks/*.answer.tex'),'\\.answer\\.tex');
 var tips    = peelNames(ls('tasks/*.tip.tex'   ),'\\.tip\\.tex'   );
 
+var picsNames = ls('tasks/*.picture-???-crop.pdf'   );
+var pics =    peelNames(picsNames,'\\.picture-\\d\\d\\d\\-crop.pdf'   );
+
+console.log(pics);
+
 function peelNames(arr, postfix) {
 	var regexp = new RegExp(postfix+'$');
 	return arr.map(function(file){
@@ -29,6 +34,21 @@ for(var i = 0; i < tasks.length; i++){
 	if (answers.indexOf(name) !== -1) {
 		listText += '\\inputanswer{tasks/' + name + '.answer.tex}\n';
 	}
+	
+	// Картинки - немного криво, но всё же
+	if (pics.indexOf(name) !== -1) {
+		// Теоретически это должно уметь вставлять по несколько картинок.
+		// На практике - не проверял.
+		// TODO: проверить
+		for (var j = 0; j < picsNames.length; j++) {
+			var r = new RegExp(name + '\\.picture-\\d\\d\\d-crop.pdf');
+			console.log(picsNames[j].file);
+			if (r.test(picsNames[j].file)) {
+				listText += '\\inputpic{tasks/' + picsNames[j].file.replace(/\.pdf$/,'') + '}{' + name + '}\n';
+			}
+		}
+	}
+
 }
 
 var fs = require('fs');

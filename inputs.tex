@@ -12,3 +12,12 @@
 	\textit{Ответ:}
 	\input{#1}
 }
+\newcommand{\inputpic}[2]{
+\begin{wrapfigure}{l}{0.3\linewidth} 
+%	\includegraphics[width=1\linewidth,clip]{{tasks/048.013.picture-001}.eps}
+	\includegraphics[width=1\linewidth]
+		{{#1}.pdf}
+	\caption{К задаче #2}
+\end{wrapfigure}
+
+}
