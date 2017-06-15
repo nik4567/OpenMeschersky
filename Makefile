@@ -1,6 +1,8 @@
 JS=nodejs
 TEX=pdflatex
 PDFVIEWER=evince
+UNOCONV=unoconv
+PDFCROP=pdfcrop
 
 all: allpics
 	$(JS) make-task-list.js
@@ -12,5 +14,5 @@ all: allpics
 allpics: $(patsubst %.odg,%.pdf,$(wildcard tasks/*.odg))
 
 %.pdf: %.odg
-	unoconv -f pdf $<
-	pdfcrop $@
+	$(UNOCONV) -f pdf $<
+	$(PDFCROP) $@
