@@ -1,0 +1,59 @@
+\begin{enumerate}
+\item \begin{enumerate}
+\item $\frac{d}{dt}\frac{\partial L}{\partial \dot{x_C}} = \lambda _1$,
+\item$\frac{d}{dt}\frac{\partial L}{\partial \dot{y_C}} = \lambda _2$,
+\item$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}} -
+\frac{\partial L}{\partial\theta} =
+-a(\lambda _1\sin{\psi} - \lambda _2\cos{\psi})\cos{\theta}$,
+\item$\frac{d}{dt}\frac{\partial L}{\partial\dot{\psi}} =
+-a(\lambda _1\cos{\psi} - \lambda _2\sin{\psi})\cos{\theta}$,
+\item$\frac{d}{dt}\frac{\partial L}{\partial\dot{\varphi}} =
+-a(\lambda _1\cos{\psi} - \lambda _2\sin{\psi})$,
+\item$\dot{x_C} - a\dot{\theta}\cos{\theta}\sin{\psi} -
+a\dot{\psi}\sin{\theta}\cos{\psi} - a\dot{\varphi}\cos{\psi} = 0$,
+\item$\dot{y_C} - a\dot{\theta}\cos{\theta}\cos{\psi} -
+a\dot{\psi}\sin{\theta}\sin{\psi} - a\dot{\varphi}\sin{\psi} = 0$,
+\end{enumerate}
+где $\lambda _1$, $\lambda _2$ --- неопределённые множители,
+$L$ --- функция Лагранжа,
+$L = \frac{1}{2}
+(\dot{x}^2_C + \dot{y}^2_C + a^2\dot{\theta}^2\sin^2{\theta}) +
+\frac{1}{2}A(\dot{\theta}^2 + \dot{\psi}^2\cos^2{\theta}) +
+\frac{1}{2}C(\dot{\psi}\sin{\theta} + \dot{\varphi})^2 -
+mga\cos{\theta}$;
+\item \begin{enumerate}
+\item $\frac{d}{dt}\frac{\partial L}{\partial\dot{x}} = \lambda _1$,
+\item$\frac{d}{dt}\frac{\partial L}{\partial\dot{y}} = \lambda _2$,
+\item$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}} -
+\frac{\partial L}{\partial\theta} = 0$,
+\item$\frac{d}{dt}\frac{\partial L}{\partial\dot{\psi}} = 0$,
+\item$\frac{d}{dt}\frac{\partial L}{\partial\dot{\varphi}} =
+-a(\lambda _1\cos{\psi} + \lambda _2\sin{\psi})$,
+\item$\dot{x} -a\dot{\varphi\cos{\psi}} = 0$,
+\item$\dot{y} -a\dot{\varphi\sin{\psi}} = 0$,
+\end{enumerate}
+где $\lambda _1$, $\lambda _2$ --- неопределённые множители,
+$L$ --- функция Лагранжа,
+$L = \frac{1}{2}m\left( \dot{x}^2 + \dot{y}^2 +
+a^2(\dot{\theta}^2 + \dot{\psi}^2\sin^2{\theta}) +
+2a\dot{x}(\dot{\theta}\cos{\theta}\sin{\psi}+\dot{\psi}\sin{\theta}\cos{\psi}) -
+2a\dot{y}(\dot{\theta}\cos{\theta}\cos{\psi}-\dot{\psi}\sin{\theta}\sin{\psi}) +
+\right) + \frac{1}{2}A(\dot{\theta}^2 + \dot{\psi}^2\cos^2{\theta}) +
+\frac{1}{2}C(\dot{\psi}\sin{\theta} + \dot{\varphi})^2 -
+mga\cos{\theta}$;
+\item \begin{enumerate}
+\item $(A + ma^2)\dot{p} + Aq^2\tg{\theta} -
+(C + ma^2)qr = mga\sin{\theta}$,
+\item$A\dot{q} + Cpr - Apq\tg{\theta} = 0$,
+\item$(C + ma^2)\dot{r} + pq = 0$,
+\item$\dot{\theta} = p$.
+\end{enumerate}
+\end{enumerate}
+После того, как эти уравнения проинтегрированы, обобщённые координаты
+$x$, $y$, $\psi$, $\varphi$ находятся из соотношений
+\begin{enumerate}
+\item $\dot{\psi}\cos{\theta} = q$,
+\item $\dot{\varphi} = r -q\tg{\theta}$,
+\item $\dot{x} = a\dot{\varphi}\cos{\psi}$,
+\item $\dot{y} = a\dot{\varphi}\sin{\psi}$.
+\end{enumerate}.
