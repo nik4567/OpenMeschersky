@@ -18,6 +18,6 @@
   "homepage": "https://github.com/nickkolok/OpenMeschersky#readme",
   "dependencies": {
     "ls": "^0.2.1",
-    "tex-lint": "0.0.12"
+    "tex-lint": "0.0.13"
   }
 }
