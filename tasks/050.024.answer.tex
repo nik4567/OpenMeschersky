@@ -6,18 +6,18 @@
 	\frac{\partial L}{\partial\theta} =
 	-a(\lambda _1\sin{\psi} - \lambda _2\cos{\psi})\cos{\theta},\\
 	\frac{d}{dt}\frac{\partial L}{\partial\dot{\psi}} =
-	-a(\lambda _1\cos{\psi} - \lambda _2\sin{\psi})\cos{\theta},\\
+	-a(\lambda _1\cos{\psi} - \lambda _2\sin{\psi})\sin{\theta},\\
 	\frac{d}{dt}\frac{\partial L}{\partial\dot{\varphi}} =
 	-a(\lambda _1\cos{\psi} - \lambda _2\sin{\psi}),\\
 	\dot{x}_C - a\dot{\theta}\cos{\theta}\sin{\psi} -
 	a\dot{\psi}\sin{\theta}\cos{\psi} - a\dot{\varphi}\cos{\psi} = 0,\\
-	\dot{y}_C - a\dot{\theta}\cos{\theta}\cos{\psi} -
+	\dot{y}_C + a\dot{\theta}\cos{\theta}\cos{\psi} -
 	a\dot{\psi}\sin{\theta}\sin{\psi} - a\dot{\varphi}\sin{\psi} = 0,
 \end{array}$
 
 где $\lambda _1$, $\lambda _2$ --- неопределённые множители,
 $L$ --- функция Лагранжа,
-$L = \frac{1}{2}
+$L = \frac{1}{2} m
 (\dot{x}^2_C + \dot{y}^2_C + a^2\dot{\theta}^2\sin^2{\theta}) +
 \frac{1}{2}A(\dot{\theta}^2 + \dot{\psi}^2\cos^2{\theta}) +
 \frac{1}{2}C(\dot{\psi}\sin{\theta} + \dot{\varphi})^2 -
